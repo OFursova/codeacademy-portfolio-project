@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,40 +10,55 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital@0;1&family=Mukta&family=Playpen+Sans&family=Roboto&family=Work+Sans:wght@400;500;800&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src="https://kit.fontawesome.com/0969d203f3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="src/css/style.css">
     <script src="src/js/script.js" async></script>
 </head>
+
 <body>
     <header>
         <h1>Skills</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+                <li><a href="skills.html">Skills</a></li>
+            </ul>
+        </nav>
     </header>
-    
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="skills.html">Skills</a></li>
-        </ul>
-    </nav>
 
     <section class="skills">
         <h2>Web Development Skills</h2>
-        <ul>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-            <li>Responsive Web Design</li>
-            <li>Frontend Frameworks (e.g., React, Vue)</li>
-            <li>Version Control (e.g., Git)</li>
+        <ul id="web-skills">
+            <li><i class="fab fa-html5"></i>HTML5</li>
+            <li><i class="fab fa-css3-alt"></i>CSS3</li>
+            <li><i class="fab fa-js"></i>JavaScript</li>
+            <li><i class="fab fa-react"></i>React</li>
+            <li><i class="fab fa-aws"></i>AWS</li>
+            <li><i class="fab fa-sketch"></i>Sketch</li>
+            <li><i class="fab fa-figma"></i>Figma</li>
+            <li><i class="fab fa-git"></i>Git</li>
+            <li><i class="fab fa-chrome"></i>Chrome</li>
+            <li><i class="fas fa-terminal"></i>Terminal</li>
+            <li><i class="fas fa-universal-access"></i>Universal Access</li>
+            <li><i class="fab fa-npm"></i>NPM</li>
+            <li><i class="fab fa-node"></i>Node</li>
+            <li><i class="fab fa-github"></i>GitHub</li>
         </ul>
-        
+
         <h2>Additional Skills</h2>
         <ul>
-            <li>UI/UX Design</li>
-            <li>Problem Solving</li>
-            <li>Team Collaboration</li>
+            <li><span class="material-symbols-outlined">view_carousel</span>UI/UX Design</li>
+            <li><span class="material-symbols-outlined">new_releases</span>Problem Solving</li>
+            <li><span class="material-symbols-outlined">groups</span>Team Collaboration</li>
         </ul>
     </section>
+    <footer>
+        <p>Made with <i class="fas fa-heart"></i> by Olha <span id="current-year"></span></p>
+    </footer>
 </body>
+
 </html>

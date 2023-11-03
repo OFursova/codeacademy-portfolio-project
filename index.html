@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,37 +10,72 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital@0;1&family=Mukta&family=Playpen+Sans&family=Roboto&family=Work+Sans:wght@400;500;800&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="src/css/style.css">
+    <script src="https://kit.fontawesome.com/0969d203f3.js" crossorigin="anonymous"></script>
     <script src="src/js/script.js" async></script>
 </head>
+
 <body>
     <header>
-        <h1>Olga Fursova</h1>
+        <h1>Olha Fursova</h1>
         <p>Web Developer</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+                <li><a href="skills.html">Skills</a></li>
+            </ul>
+        </nav>
     </header>
-    
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="skills.html">Skills</a></li>
-        </ul>
-    </nav>
 
-    <section class="projects">
-        <!-- Add your project cards here -->
-        <div class="project-card">
-            <img src="project1.jpg" alt="Project 1">
-            <h2>Project 1</h2>
-            <p>Description of Project 1.</p>
-        </div>
+    <main>
+        <section class="about-me">
+            <div class="about-me-text">
+                <h2>About Me</h2>
+                <p>
+                    Hi! I'm Olha, a passionate learner and a PHP developer on a journey to
+                    becoming a full-stack web developer. I'm currently expanding my skills by
+                    delving into the exciting world of web development and exploring both frontend
+                    and backend technologies, including Node.js.
+                </p>
+                <p>
+                    I have a background in PHP development, and my curiosity and enthusiasm for
+                    technology have led me to embrace new horizons. I enjoy the creative aspects
+                    of frontend development, where I can bring designs to life, and the logic and
+                    problem-solving challenges of backend development.
+                </p>
+                <p>
+                    When I'm not coding, I love diving into the worlds of technology, history, and
+                    the Marvel Cinematic Universe. I believe that learning and staying curious
+                    are the keys to staying at the forefront of the ever-evolving field of web
+                    development.
+                </p>
+            </div>
+            <img src="src/images/photo_2023-07-12_14-31-59.jpg" alt="A photo of Olha" class="portrait" />
+        </section>
 
-        <div class="project-card">
-            <img src="project2.jpg" alt="Project 2">
-            <h2>Project 2</h2>
-            <p>Description of Project 2.</p>
-        </div>
-    </section>
+
+        <section class="projects">
+            <!-- Add your project cards here -->
+            <div class="project-card">
+                <img src="src/images/horoscope.jpg" alt="Horoscope generator" class="project-image">
+                <h2>Horoscope generator</h2>
+                <p>First Project on CodeAcademy's self-paced projects - a web application that allows users to receive daily horoscope predictions based on their zodiac signs</p>
+            </div>
+
+            <div class="project-card">
+                <img src="project2.jpg" alt="Project 2" class="project-image">
+                <h2>Project 2</h2>
+                <p>Description of Project 2.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Made with <i class="fas fa-heart"></i> by Olha <span id="current-year"></span></p>
+    </footer>
 </body>
+
 </html>

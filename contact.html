@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,30 +10,42 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital@0;1&family=Mukta&family=Playpen+Sans&family=Roboto&family=Work+Sans:wght@400;500;800&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="src/css/style.css">
+    <script src="https://kit.fontawesome.com/0969d203f3.js" crossorigin="anonymous"></script>
     <script src="src/js/script.js" async></script>
 </head>
+
 <body>
     <header>
-        <h1>Contact</h1>
+        <h1>Contacts</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+                <li><a href="skills.html">Skills</a></li>
+            </ul>
+        </nav>
     </header>
-    
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="skills.html">Skills</a></li>
-        </ul>
-    </nav>
 
-    <section class="contact">
-        <p>Contact Information:</p>
-        <ul>
-            <li>Email: olga.fursova.zp@gmail.com</li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/olga-fursova-091150209">My LinkedIn Profile</a></li>
-            <li>GitHub: <a href="https://github.com/OFursova">My GitHub Profile</a></li>
-        </ul>
-    </section>
+    <main>
+        <section class="column">
+            <section class="contact">
+                <h2>Contact Information:</h2>
+                <ul>
+                    <li><i class="fas fa-at"></i>Email: <a href="mailto:olga.fursova.zp@gmail.com">olga.fursova.zp@gmail.com</a></li>
+                    <li><i class="fab fa-linkedin"></i>LinkedIn: <a href="https://www.linkedin.com/in/olga-fursova-091150209">My LinkedIn Profile</a></li>
+                    <li><i class="fab fa-github"></i>GitHub: <a href="https://github.com/OFursova">My GitHub Profile</a></li>
+                </ul>
+            </section>
+            <img src="src/images/racoon_as_web_developer.jpg" alt="Web developing" class="placeholder-image">
+        </section>
+    </main>
+    <footer>
+        <p>Made with <i class="fas fa-heart"></i> by Olha <span id="current-year"></span></p>
+    </footer>
 </body>
+
 </html>
