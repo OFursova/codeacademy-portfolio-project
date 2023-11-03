@@ -77,12 +77,12 @@ main {
     height: auto;
     border-radius: 12px;
     flex-shrink: 0;
-  }
+}
 
 .projects {
     height: fit-content;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -138,7 +138,9 @@ main {
 }
 
 .skills {
-    margin: 20px;
+    margin: 1rem;
+    display: flex;
+    justify-content: space-around;
 }
 
 .skills ul {
@@ -148,6 +150,7 @@ main {
 
 .skills h2 {
     margin-top: 20px;
+    text-align: center;
 }
 
 footer {
@@ -156,12 +159,46 @@ footer {
     text-align: center;
     position: absolute;
     bottom: 0;
-  }
-  
+}
 
-.fab, .fas {
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    display: inline-block;
+    max-width: 90%;
+    max-height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.fab,
+.fas {
     font-size: 1.5em;
-    margin-right: 5px;
+    min-width: 2em;
 }
 
 .fa-heart {
@@ -169,8 +206,16 @@ footer {
     font-size: 1em;
 }
 
+.material-symbols-outlined {
+    font-size: 1.5em;
+    min-width: 2em;
+    vertical-align: bottom;
+}
+
 @media only screen and (max-width: 750px) {
-    .about-me {
+
+    .about-me,
+    .skills {
         flex-direction: column;
         justify-content: center;
         align-items: center;

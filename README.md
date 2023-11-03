@@ -8,6 +8,7 @@ This is the source code for my portfolio website built during my Codeacademy pra
 * CSS
 * JavaScript
 * [Google Material Symbols](https://fonts.google.com/icons) - Used for icons
+* [FontAwesome](https://fontawesome.com/) - Used for icons
 
 ## Features
 
